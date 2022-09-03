@@ -1,27 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <form action="">
-<fieldset>
-    <legend>Formulário</legend>
-   
-    <label for="name">
-        Name
-        <input type="text" id="name">
-    </label>
-    <hr>
-    <label for="name">
-        Email
-        <input type="email" id="email">
-    </label>
-</fieldset>
-<button type = "submit">✔ Send</button>
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="name">
+                Name
+                <input type="text" id="name">
+            </label>
+            <hr>
+            <label for="name">
+                Email
+                <input type="email" id="email">
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Credentials</legend>
+            <label>
+                Password
+                <input type="password" id="password">
+
+            </label>
+            <hr>
+            <label for="confirm password">
+                Confirm Password
+                <input type="password" id="confirm password">
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Preferences </legend>
+            <label for="dark">
+                <input type="radio" name="theme" id="dark"> Dark
+            </label>
+            <br />
+            <label for="light">
+                <input type="radio" name="theme" id="Light"> Light
+            </label>
+
+        </fieldset>
+        <fieldset>
+            <legend>Pet</legend>
+            <label for="dog">
+                <input type="checkbox" id="dog"> Dog
+            </label>
+            <br />
+            <label for="cat">
+                <input type="checkbox" id="cat" > Cat
+            </label>
+            <br />
+            <label for="hamster">
+                <input type="checkbox" id="hamster"> Hamster
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>State</legend>
+            <label for="state">
+                State:
+                <select id="state">
+                   <option value="SP">São Paulo</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="BA">Bahia</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="">[...]</option>
+                </select>
+            </label>
+        </fieldset>
+        <button type="submit">✔ Send</button>
     </form>
 </body>
+
 </html>
