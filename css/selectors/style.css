@@ -3,27 +3,63 @@ margin: 0;
 padding: 0;
 }
 
+a:link{
+    text-decoration: none;
+}
+a:link:hover{
+    text-decoration: underline;
+    text-decoration-color: red ;
+}
+
+a:link[href^="http"]::after{
+    content: "🖋"
+}
+
 #header {
-background-color: darkslategray;
+background-color: black;
 padding: 15px;
 }
 
 h1 {
-    border: 1px solid red;
+   color:aqua;
    
 }
 
-.highlight {
-    padding: 2px;
-    background-color: rgb(255, 115, 0);
+p,
+.highlight
+{
+
+    transition: all 1s ease-in-out;
+
 }
 
-.extra {
+p:hover{
+    color: gray
+}
+
+
+p:hover .highlight {
+    padding: 2px;
+    background-color: rgb(255, 115, 0);
+    color: black;
+}
+
+p:hover .extra {
     border-radius: 14px;
-    border: 2px solid blue;
+    border: 2px solid red;
     box-shadow: 5px 5px lightgray;
 }
 
 [title]{
     cursor: help;
+}
+
+
+p{
+    margin-bottom: 20px;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    padding-left: 20px;
+   
+
 }
