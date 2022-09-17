@@ -1,65 +1,57 @@
-*{
-margin: 0;
-padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-a:link{
-    text-decoration: none;
+a:link {
+  text-decoration: none;
 }
-a:link:hover{
-    text-decoration: underline;
-    text-decoration-color: red ;
+a:link:hover {
+  text-decoration: underline;
+  text-decoration-color: red;
 }
 
-a:link[href^="http"]::after{
-    content: "🖋"
+a:link[href^="http"]::after {
+  content: "↗️";
 }
 
 #header {
-background-color: black;
-padding: 15px;
+  background-color: black;
+  padding: 15px;
 }
 
 h1 {
-   color:aqua;
-   
+  color: aqua;
 }
 
 p,
-.highlight
-{
-
-    transition: all 1s ease-in-out;
-
+.highlight {
+  transition: all 1s ease-in-out;
 }
 
-p:hover{
-    color: gray
+p:hover {
+  color: gray;
 }
-
 
 p:hover .highlight {
-    padding: 2px;
-    background-color: rgb(255, 115, 0);
-    color: black;
+  padding: 2px;
+  background-color: rgb(255, 115, 0);
+  color: black;
 }
 
 p:hover .extra {
-    border-radius: 14px;
-    border: 2px solid red;
-    box-shadow: 5px 5px lightgray;
+  border-radius: 14px;
+  border: 2px solid red;
+  box-shadow: 5px 5px lightgray;
 }
 
-[title]{
-    cursor: help;
+[title] {
+  cursor: help;
 }
 
-
-p{
-    margin-bottom: 20px;
-    border-bottom: 1px solid black;
-    padding-bottom: 10px;
-    padding-left: 20px;
-   
-
+p {
+  margin-bottom: 20px;
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+  padding-left: 20px;
 }
